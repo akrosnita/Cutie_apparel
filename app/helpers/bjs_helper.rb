@@ -1,0 +1,2 @@
+module BjsHelper
+end

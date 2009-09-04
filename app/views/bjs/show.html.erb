@@ -1,0 +1,36 @@
+<style type="text/css">
+<!--
+.style1 {color: red}
+.style2 {color: #004080}
+.style4 {color: #339900;	
+	font-size: 16px;
+}
+.style5 {	color: #FF6600}
+.style6 {color: #33FF00}
+-->
+</style>
+
+
+
+<h1 align="center" class="style2">
+  <%= @bj.name %>
+ </h1>
+ <p align="center">
+  <img src="/stock/<%= @bj.img_file %>"/>
+</p>
+<p align="center" class="style4">
+  <strong><%= @bj.description %></strong>
+</p>
+<p align="center" class="style1">
+  <b>Price:  </b><%= @bj.price %>
+</p>
+<p align="center" class="style6">
+  <b>Color:  </b><%= @bj.color %>
+</p>
+<p align="center" class="style5">
+  <b align="center">Size:  </b><%= @bj.size %>
+</p>
+
+
+<a href="/bjs/<%= @bj.id %>/edit">Edit</a>
+<a href="/bjs/<%= @bj.id%>/delete">Delete</a>

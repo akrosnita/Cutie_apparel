@@ -1,0 +1,8 @@
+
+<hl>All Apparel<hl>
+<ul>
+  <% for bj in @bjs %>
+  	<li><a href="/bjs/<%=bj.id%>"><%= bj.name%></a>
+  	</li>
+  <% end %>
+</ul>

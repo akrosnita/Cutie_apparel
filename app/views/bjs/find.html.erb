@@ -1,0 +1,14 @@
+<h1>Listing Cutie Apparel for <%=params[:search_string]%></h1>
+
+
+<ul>
+  <% for bj in @bjs %>
+  	<li><a href="/bjs/<%=bj.id%>"><%= bj.name%></a>
+
+  <% end %>
+</ul>
+
+
+
+<br />
+

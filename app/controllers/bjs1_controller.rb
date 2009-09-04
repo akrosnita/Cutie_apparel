@@ -1,0 +1,2 @@
+class BjsController < ApplicationController
+end

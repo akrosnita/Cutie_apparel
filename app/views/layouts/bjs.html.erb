@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Cutie Apparel: <%= controller.action_name %></title>
+    <%= stylesheet_link_tag 'default.css' %>
+    
+</head>
+<body>
+	
+    <!--div id="wrapper"-->
+		<div id="header">
+			 
+ <h1><a href=""></a></h1>
+<h2><a href=""></a></h2> 
+<span style="text-align: right">
+  <% form_tag "/bjs/find" do %>
+    <%= text_field_tag :search_string %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</span>
+			
+		</div>
+
+<div id="page">
+	<div id="content">
+		 <%= yield %>
+	</div>
+ 	<div id="sidebar">
+		<ul>
+		<li id="menu">
+		<h2>Pages</h2>
+		<ul>
+		<li><a href="http://www.hiphappykids.com.au/index.html">Home</a></li>
+		<li><a href="http://www.hiphappykids.com.au/about.html">About Us</a></li>
+		<li><a href="/bjs/">All Apparel</a></li>
+		<li><a href="/bjs/new">New Apparel</a></li>
+		<li><a href="http://www.hiphappykids.com.au/info.html">Ordering Info</a></li>
+		<li><a href="http://www.hiphappykids.com.au/partyplan.html">Party Plan</a></li>
+		<li><a href="http://www.hiphappykids.com.au/contact.html">Contact Us</a></li>
+		</ul>
+		</li>
+
+		<li id="news">
+		<h2>Catalogues</h2>
+		<ul>
+		<li>
+		<h3>Victoria</h3>
+		<p><a href="hiphappykids-vic.pdf">Download VIC Catalogue</a></p>
+		</li>
+		<li>
+		<h3>Queensland</h3>
+		<p><a href="hiphappykids-qld.pdf">Download QLD Catalogue</a></p>
+		</li>
+		</ul>
+		</li>
+
+		</ul>
+	</div>
+
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end div#page -->
+<div id="footer">
+<p id="legal">Learning Purposes: developt by P45086-Noraidah and P45087-Rosnita. All Rights Reserved.</p>
+</div> 
+</body>
+</html>
